@@ -5,6 +5,8 @@ package _03_high_low;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class HighLowGame {
 
 	public static void main(String[] args) {
@@ -16,15 +18,26 @@ public class HighLowGame {
 		// 11. Repeat steps 1 to 10 ten times
 		
 			// 1. Ask the user for a guess using a pop-up window, and save their response 
-
+String input = JOptionPane.showInputDialog("Guess the number (it's between 0 and 5)");
 			// 4. Convert the users’ answer to an int (Integer.parseInt(string))
-			
+int jol= Integer.parseInt(input);
 			// 5. if the guess is correct
+if(jol==random) {
+	JOptionPane.showMessageDialog(null, "Who new you were psychic!? You win.");
+System.exit(0);
+}
 				// 6. Win
 				// 12. Use "System.exit(0);" to quit the game if the user guessed the right answer.
+
 			// 7. if the guess is high
+else if(jol>random) {
+	JOptionPane.showMessageDialog(null, "A little too high. Better get a crystal ball to help you out next time.");
+}
 				// 8. Tell them it's too high
 			// 9. if the guess is low
+else if(jol<random) {
+	JOptionPane.showMessageDialog(null, "Sorry mate. Seems like you can't tell the future.");
+}
 				// 10. Tell them it's too low
 
 		// 13. Tell them they lose
