@@ -26,6 +26,8 @@ package _12_fizz_buzz;
 **/
 
 public class FizzBuzz {
+	public static void main(String[] args) {
+
 int number = new Random().nextInt(100);
     if (number % 3 == 0) {
         System.out.println("fizz");
@@ -35,4 +37,6 @@ int number = new Random().nextInt(100);
     {
       else  System.out.println(int);
     }
+}
+}
 }
